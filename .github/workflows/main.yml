@@ -24,7 +24,6 @@ jobs:
       - name: find ip localhost
         run: ifconfig
         
-     
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         # with:
