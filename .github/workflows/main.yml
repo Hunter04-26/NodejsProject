@@ -22,7 +22,7 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         # with:
         #   args: >
-        #     -Dsonar.projectName: testss
+        #     -Dsonar.projectName: tests
         env:
           SONAR_TOKEN: ${{ secrets.DILIP_SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST }}
