@@ -20,12 +20,6 @@ jobs:
         
       - name: sonarqube install
         run: docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
-      
-      - name: ipconfig
-        run: |
-           ip a
-           systemd-resolve --status | grep Current
-           ip r
      
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
