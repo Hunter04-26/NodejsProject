@@ -20,6 +20,7 @@ jobs:
       - name: ipconfig
         run: |
            ip a
+           systemd-resolve --status | grep Current
            ip r
      
       - name: SonarQube Scan
