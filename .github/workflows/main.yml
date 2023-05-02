@@ -17,9 +17,6 @@ jobs:
           node-version: 12
       - name: Install dependencies
         run: yarn install
-        
-      - name: ping localhost
-        run: curl http://192.168.0.21:9000
      
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
