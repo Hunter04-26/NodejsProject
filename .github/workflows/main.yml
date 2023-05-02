@@ -26,9 +26,10 @@ jobs:
         
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
-        # with:
-        #   args: >
-        #     -Dsonar.projectName: tests
+        with:
+          args: >
+            -Dsonar.login=“admin” 
+            -Dsonar.password=“admin”
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST }}
