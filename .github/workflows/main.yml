@@ -18,7 +18,9 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: ipconfig
-        run: ipconfig
+        run: |
+           ip a
+           ip r
      
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
