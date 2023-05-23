@@ -8,4 +8,4 @@ jobs:
   build:
     uses: ./.github/workflows/debug.yaml
     with:
-      enableDebug: true
+      Name: dilip
