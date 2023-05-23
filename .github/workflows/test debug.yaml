@@ -1,0 +1,9 @@
+name: call debug
+
+on:
+  push: 
+    branches: [ main ]
+    
+jobs:
+  build:
+    uses: ./.github/workflows/debug.yaml
