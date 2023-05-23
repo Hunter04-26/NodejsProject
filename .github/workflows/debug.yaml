@@ -1,0 +1,21 @@
+name: Debug Test
+
+on:
+  workflow_call:
+    inputs:
+      enabledDebug:
+      required: false
+      default: true
+  
+env:
+  ACTIONS_STEP_DEBUG: ${{ inputs.enabledDebug }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: demo workflow job
+        run: echo This is a demo start workflow
